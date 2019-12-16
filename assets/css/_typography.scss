@@ -1,0 +1,89 @@
+/* Fonts
+*
+-----------------------*/
+*{
+    font-display: swap;
+}
+
+@import url("https://use.typekit.net/agz6ndu.css");
+@font-face {
+    font-family: 'Atmoss';
+    src: url('../fonts/Atmoss.ttf');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Berthold';
+    src: url('../fonts/BertholdAkzidenzGrotesk-Reg.otf');
+    font-style: normal;
+}
+
+*:not(i){
+    font-family: roboto, sans serif;
+    font-weight: 400;
+}
+
+// .tk-roboto .tk-roboto-condensed .tk-roboto-mono
+
+.tk-atmoss{
+    font-family: 'Atmoss';
+}
+
+.tk-berthold{
+    font-family: 'Berthold';
+}
+
+p{
+    font-size: 1rem;
+}
+
+h6{
+    font-size: 1.25rem;
+    font-family: 'Atmoss';
+}
+
+h5{
+    font-size: 1.5rem;
+    font-family: 'Atmoss';
+}
+
+h4{
+    font-size: 1.75rem;
+    font-family: 'Atmoss';
+}
+
+h3{
+    font-size: 2rem;
+    font-family: 'Atmoss';
+}
+
+h2{
+    font-size: 2.5rem;
+    font-family: 'Atmoss';
+}
+
+h1{
+    font-size: 3rem;
+    font-family: 'Atmoss';
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small{
+    font-family: 'Atmoss';
+}
+.white-text{
+    color: white;
+}
+.blue-text{
+    color: $atmoss-blue;
+}
+.green-text{
+    color: $atmoss-green;
+}
+.green-dark-text{
+    color: $atmoss-green-dark;
+}
+.gray-text{
+    color: $atmoss-gray;
+}
+a:hover{
+    color: $atmoss-green;
+}

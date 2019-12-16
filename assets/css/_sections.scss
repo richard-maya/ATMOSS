@@ -1,0 +1,94 @@
+/* Home Page
+*
+-----------------------*/
+section.atmoss-intro{
+    background-image: url('../img/atmoss-despacho-arquitectura-construccion.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section.sections-intro,
+section.services-intro{
+    .card{
+        margin-bottom: 2rem;
+
+        h3{
+            font-family: Roboto;
+            font-weight: 300;
+            font-size: 1.25rem;
+            letter-spacing: -0.04em;
+            line-height: 33px;
+            text-align: center;
+            color: #2f3342;
+        }
+    }
+}
+
+section.faqs-intro{
+    .header{
+        background: $atmoss-blue;
+        min-height: 20vh;
+    }
+}
+
+section.contact-intro{
+    position: relative;
+
+    .contact-details{
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        min-height: 25vh;
+        border-radius: 5px;
+        background: #fff;
+        box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .social-media-contact-section{
+        width: 100%;
+        min-height: 50vh;
+        background: $atmoss-blue;
+    }
+}
+
+
+/* About
+*
+-----------------------*/
+section.nosotros-about{
+    background-image: url('../img/atmoss-nosotros-toluca.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+
+/* Services
+*
+-----------------------*/
+
+
+/* Projects
+*
+-----------------------*/
+section.projects-gallery{
+    img{
+        filter: grayscale(100%);
+
+        &:hover{
+            filter: grayscale(0%);
+            @include transition(300ms);
+        }
+    }
+}
+
+
+/* Contact Page
+*
+-----------------------*/
+section.contact-page{
+    iframe{
+        height: 95vh;
+        width: 100%;
+    }
+}

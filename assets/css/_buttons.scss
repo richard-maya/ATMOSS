@@ -1,0 +1,56 @@
+/* Buttons
+*
+-----------------------*/
+.btn{
+    border-radius: 3rem;
+
+    &.not-allowed {
+        cursor: not-allowed;
+    }
+}
+// .btn-balbek-outline{
+//     background-color: rgba(232,113,36,0);
+//     border-color: $balbek-orange;
+//     color: $balbek-orange;
+//     @include transition(0.3s);
+
+//     &:hover, &:focus, &.focus, &:active, &.active{
+//         color: white;
+//         background-color: rgba(232,113,36,1);
+//         border-color: $balbek-orange;
+//     }
+// }
+.btn-atmoss{
+    background-color: $atmoss-green;
+    border-color: $atmoss-green;
+    color: white;
+    @include transition(0.3s);
+
+    &:hover, &:focus, &.focus, &:active, &.active{
+        background-color: darken($atmoss-green, 15%);
+        border-color: darken($atmoss-green, 15%);
+        color: white;
+        filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 0.4));
+    }
+}
+.btn-white-outline{
+    background-color: rgba(255,255,255,0);
+    border-color: white;
+    color: white;
+    @include transition(0.3s);
+    &:hover, &:focus, &.focus, &:active, &.active{
+        color: black;
+        background-color: rgba(255,255,255,1);
+    }
+}
+
+button.slick-arrow{
+    background: $atmoss-green;
+    color: white;
+    border-radius: 100%;
+
+    &:hover, &:focus{
+        background: $atmoss-green;
+        color: white;
+    }
+}

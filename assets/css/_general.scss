@@ -1,0 +1,81 @@
+/* Mixins
+*
+-----------------------*/
+@function set-text-color($color){
+    @if(lightness($color) > 50){
+        @return #000000;
+    } @else {
+        @return #fff;
+    }
+}
+
+@mixin transition($time){
+    transition: all $time ease-out;
+}
+
+
+/* General Layout
+*
+-----------------------*/
+div[itemscope]{
+    display: none;
+}
+
+section.hero{
+    min-height: 95vh;
+    width: 100%;
+}
+
+nav.navbar-dark{
+    background: #2F3342 !important;
+
+    li.nav-item{
+        margin: 0px 0.5rem;
+        padding: 0px 1rem;
+        border-radius: 1rem;
+
+        a{
+            padding: 0.25rem 0px;
+            font-family: 'atmoss';
+
+            &.dropdown-item{
+                font-family: 'Berthold';
+            }
+        }
+
+        &.active{
+            background: $atmoss-green;
+            box-shadow: 5px 5px 20px 0 #000;
+        }
+    }
+}
+
+footer{
+    background: $atmoss-blue;
+    p{
+        font-size: 0.75rem;
+        color: white;
+    }
+}
+
+.card{
+    width: 100%;
+    min-height: 300px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+blockquote{
+    border-radius: 5px;
+    background: #bed630;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Slider
+*
+-----------------------*/
+figure.slick-slide:not(.slick-current){
+    opacity: 0.5;
+    @include transition(300ms);
+}
