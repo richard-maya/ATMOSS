@@ -8,7 +8,8 @@
         <div class="row justify-content-center">
             <div class="col-12 col-md-11 col-lg-10">
                 <header>
-                    <h1 class="text-center pb-4">NUESTROS PROYECTOS</h1>
+                    <h1 class="text-center pb-3">NUESTROS PROYECTOS</h1>
+                    <h5 class="text-uppercase text-center pb-4 tk-atmoss"><?php the_category( ', ' ); ?></h5>
                 </header>
             </div>
             <div class="col-12 col-md-11 col-lg-10">
@@ -22,7 +23,6 @@
                                     <?php the_post_thumbnail( 'full', array( 'class' => 'w-100 img-fluid mb-4' ) ); ?>
                                 </a>
                                 <h6 class="tk-berthold blue-text mb-0"><?php the_title(); ?></h6>
-                                <p class="tk-berthold gray-text"><?php the_category( ', ' ); ?></p>
                             </figure>
                         </div>
 

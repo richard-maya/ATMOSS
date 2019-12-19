@@ -8,12 +8,12 @@
 @import url("https://use.typekit.net/agz6ndu.css");
 @font-face {
     font-family: 'Atmoss';
-    src: url('../fonts/Atmoss.ttf');
+    src: url('assets/fonts/Atmoss.ttf');
     font-style: normal;
 }
 @font-face {
     font-family: 'Berthold';
-    src: url('../fonts/BertholdAkzidenzGrotesk-Reg.otf');
+    src: url('assets/fonts/BertholdAkzidenzGrotesk-Reg.otf');
     font-style: normal;
 }
 
@@ -86,4 +86,13 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small{
 }
 a:hover{
     color: $atmoss-green;
+}
+a[rel~="category"]{
+    color: $atmoss-blue;
+    font-family: 'Berthold';
+    font-size: 1.5rem;
+
+    &:hover{
+        color: $atmoss-green;
+    }
 }

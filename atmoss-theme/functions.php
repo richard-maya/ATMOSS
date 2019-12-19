@@ -23,20 +23,4 @@
 	}
 
 	add_action('wp_enqueue_scripts', 'atmoss_scripts');
-
-	// function featureText(){
-    //     $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-    //     if (strpos($url,'noticias') !== false) {
-    //         echo 'Últimas Noticias';
-    //     } 
-    //     if (strpos($url,'blog') !== false) {
-    //         echo 'Blog';
-    //     } 
-    //     if (strpos($url,'talleres') !== false) {
-    //         echo 'Talleres';
-    //     } 
-    //     if (strpos($url,'eventos') !== false) {
-    //         echo 'Eventos';
-    //     } 
-    // }
 ?>
