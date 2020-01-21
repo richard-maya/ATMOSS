@@ -27,7 +27,7 @@
                         </div>
 
                         <?php endwhile; else : ?>
-                            <p><?php esc_html_e( 'Lo sentimos, no hay noticias en éste momento.' ); ?></p>
+                            <p><?php esc_html_e( 'Lo sentimos, no hay proyectos en éste momento.' ); ?></p>
                         <?php endif; ?>
                     </div>
 

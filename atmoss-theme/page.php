@@ -5,7 +5,7 @@
 ================================================== -->
 <section class="service hero">
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mb-5 mb-md-3">
             <div class="col-12 col-md-11 col-lg-10">
                 <header>
                     <h1 class="pb-4 pt-5"><?php the_title(); ?></h1>
@@ -18,13 +18,13 @@
                     <?php the_content(); ?>
 
                 <?php endwhile; else : ?>
-                    <p><?php esc_html_e( 'Lo sentimos, no hay proyectos en éste momento.' ); ?></p>
+                    <p><?php esc_html_e( '' ); ?></p>
                 <?php endif; ?>
             </div>
 
             <div class="col-12 col-md-11 col-lg-10">
                 <div class="single-item">
-                    <?php $catProjects = new WP_Query( array( 'cat' => 19, 'posts_per_page' => 5 ) ); ?>
+                    <?php $catProjects = new WP_Query( array( 'category_name' => get_field('categoria'), 'posts_per_page' => 5 ) ); ?>
                     <?php if ( $catProjects->have_posts() ) : while ( $catProjects->have_posts() ) : $catProjects->the_post(); ?>
 
                         <div>
@@ -32,7 +32,7 @@
                                 <div class="row d-flex align-items-center">
                                     <div class="col-12 col-md-8">
                                         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-                                            <?php the_post_thumbnail( 'full', array( 'class' => 'w-100 img-fluid' ) ); ?>
+                                            <?php the_post_thumbnail( 'full', array( 'class' => 'w-100 img-fluid mb-4 mb-md-0' ) ); ?>
                                         </a>
                                     </div>
                                     <div class="col-12 col-md-4">
@@ -47,6 +47,7 @@
                     <?php endwhile; else : ?>
                         <p><?php esc_html_e( 'Lo sentimos, no hay proyectos en éste momento.' ); ?></p>
                     <?php endif; ?>
+                    <?php wp_reset_query(); ?>
                 </div>
             </div>
         </div>

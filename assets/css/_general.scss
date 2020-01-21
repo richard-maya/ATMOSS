@@ -30,12 +30,12 @@ nav.navbar-dark{
     background: #2F3342 !important;
 
     li.nav-item{
-        margin: 0px 0.25rem;
+        margin: 0px 0.1rem;
         padding: 0px 1rem;
         border-radius: 1rem;
 
         a{
-            padding: 0.25rem 0px;
+            padding: 0.1rem 0px;
             font-family: 'atmoss';
 
             &.dropdown-item{
@@ -58,7 +58,7 @@ footer{
     }
 }
 
-.card{
+.card:not(.accordion-card){
     width: 100%;
     min-height: 300px;
     border-radius: 5px;
@@ -78,4 +78,17 @@ blockquote{
 figure.slick-slide:not(.slick-current){
     opacity: 0.5;
     @include transition(300ms);
+}
+button.slick-arrow{
+    @include media-breakpoint-up(md) {
+        font-size: 2rem;
+        height: 2rem;
+        width: 2rem;
+        line-height: 2rem;
+        padding-top: 2px;
+
+        &::before{
+            font-size: 2rem;
+        }
+    }
 }

@@ -9,7 +9,7 @@
             <div class="col-12 col-md-11 col-lg-10">
                 <header>
                     <h1 class="text-center pb-3">NUESTROS PROYECTOS</h1>
-                    <h5 class="text-uppercase text-center pb-4 tk-atmoss"><?php the_category( ', ' ); ?></h5>
+                    <h5 class="text-uppercase text-center pb-4 tk-atmoss" style="font-size: 2rem;"><?php the_category( ', ' ); ?></h5>
                 </header>
             </div>
             <div class="col-12 col-md-11 col-lg-10">

@@ -7,11 +7,11 @@
 
     <!-- FAVICONS
     ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url(get_template_directory_uri()); ?>//apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url(get_template_directory_uri()); ?>//favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo esc_url(get_template_directory_uri()); ?>//favicon-16x16.png">
-    <link rel="manifest" href="<?php echo esc_url(get_template_directory_uri()); ?>//site.webmanifest">
-    <link rel="mask-icon" href="<?php echo esc_url(get_template_directory_uri()); ?>//safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url(get_template_directory_uri()); ?>/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url(get_template_directory_uri()); ?>/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo esc_url(get_template_directory_uri()); ?>/favicon-16x16.png">
+    <link rel="manifest" href="<?php echo esc_url(get_template_directory_uri()); ?>/site.webmanifest">
+    <link rel="mask-icon" href="<?php echo esc_url(get_template_directory_uri()); ?>/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
@@ -52,5 +52,10 @@
                 'walker'          => new WP_Bootstrap_Navwalker(),
             ) );
         ?>
+        <a href="<?php $headerSettings = get_field('header', 'options'); if( $headerSettings ): ?>
+                    <?php echo $headerSettings['mi_proyecto']; ?>
+                <?php endif; ?>" target="_blank" title="mi-proyecto-mx">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/ui/mi-proyecto-mx.png" alt="atmoss-arquitectura-construccion" height="15px" width="auto">
+        </a>
     </div>
 </nav>
